@@ -32,13 +32,44 @@
     border-radius: 10px;
     text-align: left;
 }
+#watchButton {
+        background-color: #f732c3;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        position: relative;
+        top: -10px;
+        transition: top 0.3s ease;
+        }
+
+        #watchButton:hover {
+            background-color: #6924a5;
+            top: -15px;
+        }
+        a {
+        text-decoration: none; /* Remove underline */
+        color: rgb(102, 0, 0); /* Set default color */
+        }
+
+        a:hover {
+        color: rgb(102, 0, 0); /* Set color on hover */
+        }
+
+        a:visited {
+        color: rgb(102, 0, 0); /* Set color for visited links */
+        }
 
     </style>
 </head>
 <body>
     <div class="text-container">
+        <a href="https://www.youtube.com/watch?v=P3wSn5K9quo" target="_blank"></a>
+        <button id="watchButton">Click on this & let this play in background while you read ❤️</button>
         <div class="centered-box">
-            <p class="paragraph" id="paragraph1" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color: rgb(102, 0, 0);">
+            <p class="paragraph" id="paragraph1" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 17px; color: rgb(102, 0, 0);">
                 My Dearest Poki ❤️,<br>
                 <br>
                 Happy Birthday, my love!! 🎂🥳🥰 I wish you all the joy and happiness, not just for this year but for countless years ahead!<br><br>
@@ -49,9 +80,14 @@
 
                 In the moments of <abbr title="A situation in which something stays the same and is therefore boring.">monotony</abbr> or when we find ourselves with nothing to do, or even when we're in that "pokish" mood, feeling a bit dull, will you be with me through it all? 🌹💍
                 <br><br>
-                Forever Yours,<br><br>Poka
+                Forever Yours,<br><br>Poka <a href="https://itsmeprinceyt.github.io/happy_birthday_inner/" target="_blank">[After Reading Click Here]</a>
             </p>
         </div>
     </div>
+    <script>
+        document.getElementById("watchButton").addEventListener("click", function() {
+            window.open("https://www.youtube.com/watch?v=P3wSn5K9quo", "_blank");
+        });
+        </script>
 </body>
 </html>
